@@ -1,4 +1,7 @@
-%h1 tasks
-- @tasks.each do |task|
-  %h2= link_to(task.title, task)
-  %p= task.description
+= render :partial => 'header'
+
+#content
+  %h1 tasks
+  - @tasks.each do |task|
+    %h2= link_to(task.title, task)
+    %p= task.description

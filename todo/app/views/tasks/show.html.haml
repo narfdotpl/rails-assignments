@@ -1,3 +1,6 @@
-%h1= @task.title
-%h2.created= @task.created_at.strftime('%d.%m.%Y')
-%p= @task.description
+= render :partial => 'header'
+
+#content
+  %h1= @task.title
+  %h2.created= @task.created_at.strftime('%d.%m.%Y')
+  %p= @task.description
