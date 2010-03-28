@@ -8,4 +8,8 @@ class TasksController < ApplicationController
     Task.new(params[:task]).save
     redirect_to :action => :index
   end
+
+  def show
+    @task = Task.find(params[:id])
+  end
 end
