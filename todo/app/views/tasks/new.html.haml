@@ -1,0 +1,5 @@
+%h1 add a task
+- form_for @task do |form|
+  %div= form.text_field :title
+  %div= form.text_area :description
+  %div= submit_tag 'add'
