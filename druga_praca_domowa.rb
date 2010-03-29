@@ -9,8 +9,13 @@ class DrugaPracaDomowa
     decrypted = string.each_byte.map {|i| (i - 3).chr}.join
     (2 + 5) ** 4
   end
+
+  def self.zadanie3(path)
+    File.open(path).read
+  end
 end
 
 
 p DrugaPracaDomowa.zadanie1(6)
 p DrugaPracaDomowa.zadanie2('grgdm#5#gr#8#l#srgqlhv#gr#f}zduwhm#srwhjl')
+p DrugaPracaDomowa.zadanie3('README.markdown')
