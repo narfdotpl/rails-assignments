@@ -17,7 +17,7 @@ class DrugaPracaDomowa
     File.open(path).read
   end
 
-  def self.zadanie4(args)
+  def self.zadanie4(*args)
     smtp = Net::SMTP.new('')
     arity = smtp.method(:check_auth_args).arity
     smtp.send(:check_auth_args, *args[0...arity])
@@ -29,4 +29,4 @@ end
 p DrugaPracaDomowa.zadanie1(6)
 p DrugaPracaDomowa.zadanie2('grgdm#5#gr#8#l#srgqlhv#gr#f}zduwhm#srwhjl')
 p DrugaPracaDomowa.zadanie3('README.markdown')
-p DrugaPracaDomowa.zadanie4(['foo', 'bar', 'baz'])
+p DrugaPracaDomowa.zadanie4('foo', 'bar', 'baz')
