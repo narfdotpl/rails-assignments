@@ -42,4 +42,4 @@
   [1]: http://github.com/narfdotpl/rails-assignments/commit/c4330c1
   [2]: http://github.com/narfdotpl/rails-assignments/commit/7369d35
   [3]: http://github.com/narfdotpl/rails-assignments/commit/ed8bf96
-  [4]: http://github.com/narfdotpl/rails-assignments/commit/3846dd7
+  [4]: http://github.com/narfdotpl/rails-assignments/compare/ed8bf96...b0bc8a1#diff-1
